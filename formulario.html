@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedidos Pasteles Del Barrio</title>
+</head>
+
+<body>
+  <main class="main-container">
+    <nav>
+        <img src="PastelesDelBarrio.png" alt="Logo Pasteles del barrio" width="200">
+        <h1>Pasteleles del barrio</h1>
+    </nav>
+    <p id="description">Llena este formulario para realizar tu pedido</p>
+    <form id="survey-form">
+      <div>
+        <label id="name-label" for="name">Nombre</label>
+        <input id="name" type="text" placeholder="Nombre" required="required">
+      </div>
+      <div>
+        <label id="number-label" for="number">Número de teléfono</label>
+        <input id="number" type="number" placeholder="Numero de teléfono" required="required" min="4" max="8">
+      </div>
+      <div>
+        <label id="email-label" for="email">Correo electrónico</label>
+        <input id="email" type="email" placeholder="Correo electrónico" required="required">
+      </div>
+      <div>
+        <label for="story">Descripción general del pastel:</label>
+      </div>
+      <div>
+        <textarea id="story" name="story" rows="5" cols="33">Pastel de .... cubierto de ... con adornos de ...</textarea>
+      </div>
+
+      <p>Sabores</p>
+
+      <div>
+        <input type="checkbox" id="vainilla" name="vainilla" value="vainilla" checked>
+        <label for="vainilla">Vainilla</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="chocolate" name="chocolate" value="chocolate">
+        <label for="chocolate">Chocolate</label>
+      </div>
+      <div>
+        <input type="checkbox" id="fresa" name="fresa" value="fresa">
+        <label for="fresa">Fresa</label>
+      </div>
+      <p>Adornos</p>
+
+      <div>
+        <input type="checkbox" id="chispas" name="chispas" value="chispas" checked>
+        <label for="chispas">Chispas</label>
+      </div>
+
+      <div>
+        <input type="checkbox" id="fruta" name="fruta" value="fruta">
+        <label for="fruta">Fruta</label>
+      </div>
+      <div>
+        <input type="checkbox" id="chocolate_adorno" name="chocolate_adorno" value="chocolate_adorno">
+        <label for="chocolate_adorno">Chocolate</label>
+      </div>
+      
+      <div>
+        <button id="submit" type="submit">Deseo hacer mi pedido</button>
+      </div>
+    </form>
+
+  </main>
+</body>
+
+</html>
